@@ -3,6 +3,7 @@ module github.com/ebobo/logging_lab5e_go
 go 1.17
 
 require (
+	github.com/ebobo/utilities_go v0.1.1
 	github.com/stretchr/testify v1.7.0
 	go.uber.org/zap v1.21.0
 )

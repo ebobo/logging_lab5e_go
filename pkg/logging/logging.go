@@ -14,17 +14,17 @@ const (
 	// want.  If the value is "file" we will only log to file.  If the value is "both", we
 	// log to console and file.  If the value is "console" we log to console only.
 	// "container"
-	LoggerSpecEnvVar = "SR_LOGGER"
+	LoggerSpecEnvVar = "TEST_LOGGER"
 
 	// LogDirEnvVar is the environment variable that controls which directory logging
 	// will take place in.  If this is unset we do not log to file.make
-	LogDirEnvVar = "SR_LOG_DIR"
+	LogDirEnvVar = "TEST_LOG_DIR"
 
 	// LogFileSizeEnvVar specifies max log file size in megabytes
-	LogFileSizeEnvVar = "SR_LOG_FILE_SIZE_MB"
+	LogFileSizeEnvVar = "TEST_LOG_FILE_SIZE_MB"
 
 	// LogFileMaxAgeEnvVar is the maximum number of days we will keep log files around.
-	LogFileMaxAgeEnvVar = "SR_LOG_FILE_MAX_AGE_DAYS"
+	LogFileMaxAgeEnvVar = "TEST_LOG_FILE_MAX_AGE_DAYS"
 
 	// maxDurationForTemporaryLogLevelChange is the maximum amount of time we allow a
 	// temporary log change to last
@@ -34,7 +34,7 @@ const (
 	// for if no time is given.
 	defaultTemporaryLogLevelChangeDuration = 5 * time.Minute
 
-	logFileName = "sr.log"
+	logFileName = "test.log"
 )
 
 var (
